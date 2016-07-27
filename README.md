@@ -7,13 +7,15 @@
 1. Install Ruby `2.1.9' with Rbenv or RVM.
 2. Install Bundler with `$ gem install bundler`.
 3. Verify Rails version with `$ rails -v`, should be `3.2.13`. If not, try to install it.
-4. Create tables in database with `$ rake db:create db:migrate` and setup test
-   environment with `$ rake db:test:prepare`.
-5. Run the server with `$ rails s`.
+4. Install PostgreSQL in your machine or provide a container with `$ docker-compose up -d`
+5. Make sure the app is well configured to use your database instance on file `config/database.yml`
+6. Create tables in database with `$ bundle exec rake db:create db:migrate` and setup test
+   environment with `$ bundle exec rake db:test:prepare`.
+7. Run the server with `$ bundle exec rails s`.
 
 # Tasks
 Você pode ver as coisas que temos para fazer (features, bugs, ideias etc) no Waffle:
 
-https://waffle.io/minhaportoalegre/verdade-ou-consequencia
+[waffle.io/minhaportoalegre/verdade-ou-consequencia](https://waffle.io/minhaportoalegre/verdade-ou-consequencia)
 
 Ou se preferir, nas issues aqui mesmo no Github.
